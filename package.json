@@ -1,6 +1,6 @@
 {
   "name": "language-asm-avr",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A language package for AVR Assembly and Disassembly code. (An improved fork of language-avr-assembly)",
   "keywords": [
     "avr",
