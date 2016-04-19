@@ -1,0 +1,18 @@
+{
+  "name": "language-asm-avr",
+  "version": "0.0.0",
+  "description": "A language package for AVR Assembly and Disassembly code.",
+  "keywords": [
+    "avr",
+    "asm",
+    "assembly"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkatzdev/language-asm-avr.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

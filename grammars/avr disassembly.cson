@@ -1,0 +1,33 @@
+fileTypes: [
+  "lss"
+]
+name: "AVR Disassembly"
+patterns: [
+  {
+    captures:
+      "1":
+        name: "entity.name.tag.localname"
+      "2":
+        name: "support.other"
+      "3":
+        name: "string.other"
+    match: "^\\s*([0-9a-f]+:)\\t([0-9a-f ]{51}) (.+?)$"
+    name: "meta.data.avrdisasm"
+  }
+  {
+    begin: "^\\s*([0-9a-f]+:)\\t([^\\t]+)\\t"
+    beginCaptures:
+      "1":
+        name: "entity.name.tag.localname"
+      "2":
+        name: "support.other"
+    end: "$"
+    name: "meta.instruction.avrdisasm"
+    patterns: [
+      {
+        include: "source.avrasm"
+      }
+    ]
+  }
+]
+scopeName: "source.avrdisasm"

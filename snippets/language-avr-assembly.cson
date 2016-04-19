@@ -1,0 +1,332 @@
+".source.avrasm":
+  "Code Segment":
+    prefix: "cseg"
+    body: '''
+      .cseg
+      	$0
+    '''
+  "Add with Carry":
+    prefix: "ADC"
+    body: '''
+      ADC ${1:Rd},${2:Rr}
+      $0
+    '''
+  "Add without Carry":
+    prefix: "ADD"
+    body: '''
+      ADD ${1:Rd},${2:Rr}
+      $0
+    '''
+  "Add Immediate to Word":
+    prefix: "ADIW"
+    body: '''
+      ADIW ${1:Rd+1}:${2:Rd},${3:K}
+      $0
+    '''
+  "Logical AND":
+    prefix: "AND"
+    body: '''
+      AND ${1:Rd},${2:Rr}
+      $0
+    '''
+  "Logical AND with Immediate":
+    prefix: "ANDI"
+    body: '''
+      ANDI ${1:Rd},${2:K}
+      $0
+    '''
+  "Arithmetic Shift Right":
+    prefix: "ASR"
+    body: '''
+      ASR ${1:Rd}
+      $0
+    '''
+  "Bit Clear in SREG":
+    prefix: "BCLR"
+    body: '''
+      BCLR ${1:s}
+      $0
+    '''
+  "Bit Load from the T Flag in SREG to a Bit in Register":
+    prefix: "BLD"
+    body: '''
+      BLD ${1:Rd},${2:b}
+      $0
+    '''
+  "Branch if Bit in SREG is Cleared":
+    prefix: "BRBC"
+    body: '''
+      BRBC ${1:s},${2:label}
+      $0
+    '''
+  "Branch if Bit in SREG is Set":
+    prefix: "BRBS"
+    body: '''
+      BRBS ${1:s},${2:label}
+      $0
+    '''
+  "Branch if Carry Cleared":
+    prefix: "BRCC"
+    body: '''
+      BRCC ${1:label}
+      $0
+    '''
+  "Branch if Carry Set":
+    prefix: "BRCS"
+    body: '''
+      BRCS ${1:label}
+      $0
+    '''
+  "Break":
+    prefix: "BREAK"
+    body: '''
+      BREAK
+      $0
+    '''
+  "Branch if Equal":
+    prefix: "BREQ"
+    body: '''
+      BREQ ${1:label}
+      $0
+    '''
+  "Branch if Greater or Equal (Signed)":
+    prefix: "BRGE"
+    body: '''
+      BRGE ${1:label}
+      $0
+    '''
+  "Branch if Half Carry Flag is Cleared":
+    prefix: "BRHC"
+    body: '''
+      BRHC ${1:label}
+      $0
+    '''
+  "Branch if Half Carry Flag is Set":
+    prefix: "BRHS"
+    body: '''
+      BRHS ${1:label}
+      $0
+    '''
+  "Branch if Global Interrupt is Disabled":
+    prefix: "BRID"
+    body: '''
+      BRID ${1:label}
+      $0
+    '''
+  "Branch if Global Interrupt is Enabled":
+    prefix: "BRIE"
+    body: '''
+      BRIE ${1:label}
+      $0
+    '''
+  "Branch if Lower (Unsigned)":
+    prefix: "BRLO"
+    body: '''
+      BRLO ${1:label}
+      $0
+    '''
+  "Branch if Less Than (Signed)":
+    prefix: "BRLT"
+    body: '''
+      BRLT ${1:label}
+      $0
+    '''
+  "Branch if Minus":
+    prefix: "BRMI"
+    body: '''
+      BRMI ${1:label}
+      $0
+    '''
+  "Branch if Not Equal":
+    prefix: "BRNE"
+    body: '''
+      BRNE ${1:label}
+      $0
+    '''
+  "Branch if Plus":
+    prefix: "BRPL"
+    body: '''
+      BRPL ${1:label}
+      $0
+    '''
+  "Branch if Same or Higher (Unsigned)":
+    prefix: "BRSH"
+    body: '''
+      BRSH ${1:label}
+      $0
+    '''
+  "Branch if the T Flag is Cleared":
+    prefix: "BRTC"
+    body: '''
+      BRTC ${1:label}
+      $0
+    '''
+  "Branch if the T Flag is Set":
+    prefix: "BRTS"
+    body: '''
+      BRTS ${1:label}
+      $0
+    '''
+  "Branch if Overflow Cleared":
+    prefix: "BRVC"
+    body: '''
+      BRVC ${1:label}
+      $0
+    '''
+  "Branch if Overflow Set":
+    prefix: "BRVS"
+    body: '''
+      BRVS ${1:label}
+      $0
+    '''
+  "Bit Set in SREG":
+    prefix: "BSET"
+    body: '''
+      BSET ${1:s}
+      $0
+    '''
+  "Bit Store from Bit in Register to T FLag in SREG":
+    prefix: "BST"
+    body: '''
+      BST ${1:Rd},${2:b}
+      $0
+    '''
+  "Long Call to a Subroutine":
+    prefix: "CALL"
+    body: '''
+      CALL ${1:label}
+      $0
+    '''
+  "Clear Bit in I/O Register":
+    prefix: "CBI"
+    body: '''
+      CBI ${1:A},${2:b}
+      $0
+    '''
+  "Clear Bits in Register":
+    prefix: "CBR"
+    body: '''
+      CBR ${1:Rd},${2:K}
+      $0
+    '''
+  "Clear Carry Flag":
+    prefix: "CLC"
+    body: '''
+      CLC
+      $0
+    '''
+  "Constant Expression":
+    prefix: "equ"
+    body: '''
+      .equ ${1:label} = ${2:expression}
+      $0
+    '''
+  "Data Segment":
+    prefix: "dseg"
+    body: '''
+      .dseg
+      	$0
+    '''
+  "Define word(s)":
+    prefix: "dw"
+    body: '''
+      .dw	${1:expression}
+      $0
+    '''
+  "Define byte(s)":
+    prefix: "db"
+    body: '''
+      .db ${1:expression}
+      $0
+    '''
+  "Device definition":
+    prefix: "device"
+    body: '''
+      .device ${1:name}
+      $0
+    '''
+  "EEPROM Segment":
+    prefix: "eseg"
+    body: '''
+      .eseg
+      	$0
+
+    '''
+  Exit:
+    prefix: "exit"
+    body: '''
+      .exit
+      $0
+    '''
+  Include:
+    prefix: "include"
+    body: '''
+      .include "$1"
+      $0
+    '''
+  "Init Stackpointer":
+    prefix: "stack"
+    body: '''
+      ; Init Stackpointer
+      ldi	${1:temp}, LOW(RAMEND)
+      out	SPL, $1
+      ldi	$1, HIGH(RAMEND)
+      out	SPH, $1
+      $0
+    '''
+  "Jump":
+    prefix: "JMP"
+    body: '''
+      JMP ${1:label}
+      $0
+    '''
+  "List Macro":
+    prefix: "listmac"
+    body: '''
+      .listmac
+      $0
+    '''
+  List:
+    prefix: "list"
+    body: '''
+      .list
+      $0
+    '''
+  Macro:
+    prefix: "macro"
+    body: '''
+      .macro	${1:name}
+      	$2
+      .endmacro
+      $0
+    '''
+  "No List":
+    prefix: "nolist"
+    body: '''
+      .nolist
+      $0
+    '''
+  "Program Origin":
+    prefix: "org"
+    body: '''
+      .org ${1:expression}
+      $0
+    '''
+  "Register Symbol":
+    prefix: "def"
+    body: '''
+      .def ${1:symbol} = ${2:register}
+      $0
+    '''
+  "Reserve byte":
+    prefix: "byte"
+    body: '''
+      .byte ${1:size}
+      $0
+    '''
+  "Variable Expression":
+    prefix: "set"
+    body: '''
+      .set ${1:label} = ${2:expression}
+      $0
+    '''
