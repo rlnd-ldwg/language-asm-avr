@@ -1,7 +1,7 @@
 {
   "name": "language-asm-avr",
   "version": "0.1.1",
-  "description": "A language package for AVR Assembly and Disassembly code. *With Autocomplete Snippets (WIP)*",
+  "description": "A language package for AVR Assembly and Disassembly code. (An improved fork of language-avr-assembly)",
   "keywords": [
     "avr",
     "asm",
