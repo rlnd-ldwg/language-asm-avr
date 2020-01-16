@@ -1,11 +1,9 @@
-# language-gnc-avr-asm package
-
-Language package for AVR Assembly and Disassembly code.
-
-Based on dkatzdev's fork (language-asm-avr) of language-asm-avr.
+# language-gnu-avr-asm package
+Forked from dkatzdev's language-asm-avr.  
+Syntax highlighting package for GNU AVR Assembler. 
 Updated the compiler directives to the GNU Assembler Version 2.30.0.
 
-Add the following lines to your style-sheet to enjoy the full feature of pseudo opcode highlighting:
+### Add the following lines to your style-sheet to enjoy the full feature of pseudo opcode highlighting:
 
 ```coffee
 @import "syntax-variables";
