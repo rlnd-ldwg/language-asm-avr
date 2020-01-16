@@ -1,7 +1,7 @@
 {
-  "name": "language-asm-avr",
+  "name": "language-gnu-avr-asm",
   "version": "0.1.2",
-  "description": "A language package for AVR Assembly and Disassembly code. (An improved fork of language-avr-assembly)",
+  "description": "A language package for GNU-AVR Assembly and Disassembly code based on dkatzdev's fork (language-asm-avr) of language-asm-avr.",
   "keywords": [
     "avr",
     "asm",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dkatzdev/language-asm-avr.git"
+    "url": "https://github.com/rlnd-ldwg/language-gnu-avr-asm.git"
   },
   "license": "MIT",
   "engines": {
