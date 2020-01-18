@@ -53,6 +53,9 @@ atom-text-editor {
      &.syntax--preprocessor.syntax--directive {
        color: @red;
      }
+     &.syntax--preprocessor.syntax--c-directive {
+        color: @yellow;
+     }
      &.syntax--preprocessor.syntax--condition {
        //text-decoration: underline;
        color: @orange;
