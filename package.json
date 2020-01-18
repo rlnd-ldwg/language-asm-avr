@@ -1,7 +1,7 @@
 {
   "name": "language-gnu-avr-asm",
   "version": "0.2.2",
-  "description": "A language package for GNU-AVR Assembly and Disassembly code based on dkatzdev's fork (language-asm-avr) of language-asm-avr.",
+  "description": "Syntax highlighting package for GNU AVR Assembler.",
   "keywords": [
     "avr",
     "asm",
