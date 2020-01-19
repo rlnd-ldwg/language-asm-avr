@@ -1,1 +1,3 @@
 *.log
+*.old
+up2lo.py
