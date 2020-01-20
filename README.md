@@ -4,7 +4,7 @@ Syntax highlighting package for GNU AVR Assembler.
 Updated the compiler directives to the GNU Assembler Version 2.30.0.
 
 Because I always write the opcodes in lower case so I converted them.
-If you like you can adapt the script up2lo.py (you'll find it under snippets)accordingly and convert it back to upper case
+If you like, you can adapt the script up2lo.py (you'll find it under snippets) and convert it back to upper case
 
 ### Add the following lines to your style-sheet to enjoy the full feature of pseudo opcode highlighting:
 
