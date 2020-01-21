@@ -32,7 +32,6 @@ print 'converting ' + sys.argv[1] + ' to ' + sys.argv[2] + '...\n'
 infile = open(sys.argv[1], 'rb')
 outfile = open(sys.argv[2], 'w')
 count = 0
-regex = re.compile(r'(\s|\t|=)+')
 keyword = ""
 for dummy in infile:
     line = dummy.rstrip()
@@ -42,8 +41,8 @@ for dummy in infile:
         end = line.rfind('"')
         keyword = line[start+1:end]
         if keyword.upper() not in Keywords:
-			keyword = ""
-# change the following line to convert back to upper case			
+            keyword = ""
+# change the following line to convert back to upper case
 #    line = line.replace(keyword, keyword.upper())
     line = line.replace(keyword, keyword.lower())
     outfile.write('%s\r\n' % line)
