@@ -1,6 +1,6 @@
 {
   "name": "language-gnu-avr-asm",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Syntax highlighting package for GNU AVR Assembler.",
   "keywords": [
     "avr",
