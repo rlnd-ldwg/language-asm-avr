@@ -6,11 +6,11 @@ fileTypes: [
 name: "AVR Assembly"
 patterns: [
   {
-    match: "(?i)\\b(add|adc|adiw|sub|subi|sbc|sbci|sbiw|and|andi|or|ori|eor|com|neg|sbr|cbr|inc|dec|tst|clr|ser|mul|muls|mulsu|fmul|fmuls|fmulsu|des|rjmp|ijmp|eijmp|jmp|rcall|icall|eicall|call|ret|reti|cpse|cp|cpc|cpi|sbrc|sbrs|sbic|sbis|brbs|brbc|breq|brne|brcs|brcc|brsh|brlo|brmi|brpl|brge|brlt|brhs|brhc|brts|brtc|brvs|brvc|brie|brid|mov|movw|ldi|lds|ld|ldd|sts|st|std|lpm|elpm|spm|in|out|push|pop|xch|las|lac|lat|lsl|lsr|rol|ror|asr|swap|bset|bclr|sbi|cbi|bst|bld|sec|clc|sen|cln|sez|clz|sei|cli|ses|cls|sev|clv|set|clt|seh|clh|break|nop|sleep|wdr)\\b(?i)"
+    match: "(?i)\\b(adc|add|adiw|and|andi|asr|bclr|bld|brbc|brbs|brcc|brcs|break|breq|brge|brhc|brhs|brid|brie|brlo|brlt|brmi|brne|brpl|brsh|brtc|brts|brvc|brvs|bset|bst|call|cbi|cbr|clc|clh|cli|cln|clr|cls|clt|clv|clz|com|cp|cpc|cpi|cpse|dec|des|eicall|eijmp|elpm|eor|fmul|fmuls|fmulsu|icall|ijmp|in|inc|jmp|lac|las|lat|ld|ldd|ldi|lds|lpm|lsl|lsr|mov|movw|mul|muls|mulsu|neg|nop|or|ori|out|pop|push|rcall|ret|reti|rjmp|rol|ror|sbc|sbci|sbi|sbic|sbis|sbiw|sbr|sbrc|sbrs|sec|seh|sei|sen|ser|ses|set|sev|sez|sleep|spm|st|std|sts|sub|subi|swap|tst|wdr|xch)\\b(?i)"
     name: "keyword.instruction.avrasm"
   }
   {
-    match: "(?i)\\.\\b(abort|ABORT|align|altmacro|balign|balignl|balignw|block|bundle_align_mode|bundle_lock|cfi_adjust_cfa_offset|cfi_def_cfa|cfi_def_cfa_offset|cfi_def_cfa_register|cfi_endproc|cfi_escape|cfi_fde_data|cfi_inline_lsda|cfi_lsda|cfi_offset|cfi_personality|cfi_personality_id|cfi_register|cfi_rel_offset|cfi_remember_state|cfi_restore|cfi_restore_state|cfi_return_column|cfi_same_value|cfi_sections|cfi_signal_frame|cfi_startproc|cfi_undefined|cfi_val_encoded_addr|cfi_val_offset|cfi_window_save|comm|comment|data|debug_frame.|debug_line|def|desc|dim|double|eh_frame.|eh_frame_entry|eject|equ|equiv|eqv|err|error|extern|fail|file|fill|global|gnu.extab|gnu.linkonce|gnu_attribute|hidden|ident|incbin|include|init.exception|int|internal|irp|irpc|lcomm|lflags|line|linkonce|list|ln|loc|loc_mark_labels|local|mri|nolist|offset|org|p2align|p2alignl|p2alignw|popsection|previous|print|protected|psize|purgem|pushsection|rdata|reloc|rept|sbttl|scl|section|set|size|skip|sleb128|space|stabd|stabn|stabs|struct|subsection|symver|tag|text|title|type|uleb128|val|version|vtable_entry|vtable_inherit|warning|weak|weakref|zero)\\b(?i)"
+    match: "(?i)\\.\\b(abort|ABORT|align|altmacro|balign|balignl|balignw|bundle_align_mode|bundle_lock|cfi_adjust_cfa_offset|cfi_def_cfa|cfi_def_cfa_offset|cfi_def_cfa_register|cfi_endproc|cfi_escape|cfi_fde_data|cfi_inline_lsda|cfi_lsda|cfi_offset|cfi_personality|cfi_personality_id|cfi_register|cfi_rel_offset|cfi_remember_state|cfi_restore|cfi_return_column|cfi_same_value|cfi_sections|cfi_signal_frame|cfi_startproc|cfi_undefined|cfi_val_encoded_addr|cfi_val_offset|cfi_window_save|comm|data|def|desc|dim|eject|end|equ|equiv|eqv|err|error|extern|fail|file|fill|float|global|gnu_attribute|hidden|ident|ifne|ifnes|incbin|include|int|internal|irp|irpc|lcomm|lflags|line|linkonce|list|ln|loc|loc_mark_labels|local|long|mri|noaltmacro|nolist|offset|org|p2align|p2alignl|p2alignw|popsection|previous|print|protected|psize|purgem|pushsection|reloc|sbttl|scl|section|set|size|skip|sleb128|stabd|stabn|stabs|struct|subsection|symver|tag|text|title|type|uleb128|val|version|vtable_entry|vtable_inherit|warning|weak|weakref|zero)\\b(?i)"
     name: "meta.preprocessor.directive.avrasm"
   }
   {
@@ -18,11 +18,11 @@ patterns: [
     name: "meta.preprocessor.c-directive.avrasm"
   }
   {
-    match: "(?i)\\.\\b(else|elseif|end|endef|endfunc|endif|endm|endr|exitm|func|if|ifb|ifc|ifdef|ifeq|ifeqs|ifge|ifgt|ifle|iflt|ifnb|ifnc|ifndef|ifne|ifnes|ifnotdef|macro|noaltmacro)\\b(?i)"
+    match: "(?i)\\.\\b(else|elseif|endef|endfunc|endif|endm|endr|exitm|func|if|ifb|ifc|ifdef|ifeq|ifeqs|ifge|ifgt|ifle|iflt|ifnb|ifnc|ifndef|macro|rept)\\b(?i)"
     name: "meta.preprocessor.condition.avrasm"
   }
   {
-    match: "(?i)\\.\\b(2byte|4byte|8byte|ascii|asciz|byte|float|hword|long|octa|quad|short|single|string|string32|word)\\b(?i)"
+    match: "(?i)\\.\\b(2byte|4byte|8byte|ascii|asciz|byte|double|hword|octa|quad|short|single|space|string|word)\\b(?i)"
     name: "meta.preprocessor.definition.avrasm"
   }
   {
