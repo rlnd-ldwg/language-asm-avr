@@ -1,7 +1,7 @@
 # language-gnu-avr-asm package
 Forked from dkatzdev's language-asm-avr.  
 Syntax highlighting package for GNU AVR Assembler. 
-Updated the compiler directives to the GNU Assembler Version 2.30.0.
+Updated the compiler directives to the GNU Assembler Version 2.35.0.
 
 Because I always write the opcodes in lower case so I converted them.
 If you like, you can adapt the script up2lo.py (you'll find it under snippets) and convert it back to upper case
